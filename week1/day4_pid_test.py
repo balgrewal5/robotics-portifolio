@@ -4,7 +4,7 @@ import numpy as np                # for time arrays
 import matplotlib.pyplot as plt   # to see visual results
 from pid import PID               # import the PID controller class pid.py
 
-pid= PID( kp=1.0, ki=0.1, kd=0.05)  # create a PID controller with chosen gains
+pid= PID( kp=0.2, ki=0.4, kd=0.5)  # create a PID controller with chosen gains
 
 target= 10.0                      # Where the robot should go
 position= 0.0                     # Where the robot currently is 
