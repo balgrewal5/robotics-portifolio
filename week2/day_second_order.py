@@ -14,8 +14,10 @@ t= np.arange(0.0, T+ dt, dt)   # time array/ list of time instants we will itera
 
 # Control parameters
 x_target= 10.0 # target position
-kp= 1.0 # proportional gain
+kp= 5.0 # proportional gain
 kd= 2.0 # derivative gain
+ki= 0.1 # integral gain
+i_error= 0.0  # integral of error initialized to zero
 
 # Logs (not used in this simple example, but useful for more complex simulations)
 x_log= []  # list to log position over time (not used in this simple example)
@@ -26,10 +28,11 @@ a_log= []  # list to log acceleration over time (not used in this simple example
 for _ in t:            # for each time instant in the time array t
     # Compute error
     error= x_target - x   # difference between target position and current position
-    d_error= -v
+    d_error= -v          # derivative of error is negative velocity
+    i_error += error * dt  # integral of error/ += means accumulates over time
 
     # Compute acceleration using proportional control
-    a= kp * error + kd * d_error  # acceleration is proportional to the error and derivative of error
+    a= kp * error + kd * d_error + ki * i_error  # acceleration is proportional to the error, derivative of error, and integral of error
     
 
     # Update velocity and position using Euler integration
