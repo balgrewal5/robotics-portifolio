@@ -1,4 +1,4 @@
-# Week 2 — Control & 2D Robot Motion
+# Portfolio Project 1- PID-Controlled Go-To-Goal Robot (2D)
 
 ## Overview
 This week focuses on building intuition and practical skill in robot motion and control.
