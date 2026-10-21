@@ -26,7 +26,7 @@ This repository serves as a chronological learning archive, demonstrating the de
 
 **Weeks 0–4:** Foundational programming, robotics and control exercises.
 
-**Weeks 5–22:** Embedded systems, ROS 2, perception, navigation, planning, control and intelligent robotics.
+**Weeks 5–24:** Embedded systems, ROS 2, perception, navigation, planning, control and intelligent robotics.
 
 *Earlier weekly work is being progressively archived into this repository.*
 
