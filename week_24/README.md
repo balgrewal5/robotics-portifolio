@@ -1,7 +1,7 @@
 # Week 24 — Roadmap 1 Final Review
 
 ## Overview
-Final consolidation stage of Robotics Roadmap 1, focusing on reviewing technical skills, organising project documentation and preparing the engineering portfolio.
+Final consolidation stage of Robotics Roadmap 1, focusing on reviewing technical skills, organising project documentation, and preparing the engineering portfolio.
 
 ## Planned Activities
 - Review programming, electronics, ROS 2 and robotics fundamentals.
